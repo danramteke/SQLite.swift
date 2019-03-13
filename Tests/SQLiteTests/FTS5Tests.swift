@@ -1,5 +1,9 @@
 import XCTest
+#if SWIFT_PACKAGE
+import SQLiteDotSwift
+#else 
 import SQLite
+#endif   
 
 class FTS5Tests: XCTestCase {
     var config: FTS5Config!

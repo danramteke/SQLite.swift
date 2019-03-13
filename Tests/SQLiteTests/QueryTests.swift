@@ -8,7 +8,11 @@ import CSQLite
 #else
 import SQLite3
 #endif
+#if SWIFT_PACKAGE
+@testable import SQLiteDotSwift
+#else 
 @testable import SQLite
+#endif   
 
 class QueryTests : XCTestCase {
 

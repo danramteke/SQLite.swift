@@ -1,5 +1,9 @@
 import XCTest
-import SQLite
+#if SWIFT_PACKAGE
+@testable import SQLiteDotSwift
+#else 
+@testable import SQLite
+#endif   
 
 class FoundationTests : XCTestCase {
     func testDataFromBlob() {

@@ -1,5 +1,9 @@
 import XCTest
+#if SWIFT_PACKAGE
+@testable import SQLiteDotSwift
+#else 
 @testable import SQLite
+#endif   
 
 class RowTests : XCTestCase {
 
