@@ -1,5 +1,5 @@
 import XCTest
-@testable import SQLiteTests
+@testable import SQLiteDotSwiftTests
 
 XCTMain([
 testCase([
